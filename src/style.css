@@ -1,3 +1,87 @@
 body {
-  background-color: pink;
+  font: 11px comic sans ms;
+  line-height: 1.5;
+  color: #666;
+  text-align: justify;
+  background: url(https://3.bp.blogspot.com/-8XeMK8VyNlI/TwGFqf8APrI/AAAAAAAACsA/OyvKWEiQaAw/s320/unakotakgrey.jpg)
+    fixed repeat;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  bottom: 0px;
+  right: 20px;
+  padding: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+blockquote {
+  padding: 10px;
+  font: 20px "Lobster Two", cursive;
+  background: url(https://3.bp.blogspot.com/-e1dEM6zh5jU/WdR_pyfaLbI/AAAAAAAAVos/6dQCGDgp48MrFGuCBi_5mez0muk40ErvQCLcBGAs/s1600/abce349c.png);
+  color: #474747;
+  opacity: 0.9;
+  -moz-border-radius-topmright: 50px 50px;
+  border-top-right-radius: 50px 50px;
+  -moz-border-radius-topleft: 50px 50px;
+  border-top-left-radius: 50px 50px;
+  -moz-border-radius-bottomright: 50px 50px;
+  border-bottom-right-radius: 50px 50px;
+  -moz-border-radius-bottomleft: 50px 50px;
+  border-bottom-left-radius: 50px 50px;
+}
+
+blockquote:hover {
+  background: #b6cccd;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0px;
+  left: 100px;
+  width: 230px;
+  height: 95vh;
+  text-align: center;
+  background: #f0edea;
+  padding: 10px;
+  font-size: 15px;
+  -moz-border-radius-bottomright: 50px 50px;
+  border-bottom-right-radius: 50px 50px;
+  -moz-border-radius-bottomleft: 50px 50px;
+  border-bottom-left-radius: 50px 50px;
+}
+
+.jar {
+  font: 20px "Lobster Two", cursive;
+  position: fixed;
+  top: 10px;
+  bottom: 10px;
+  right: 100px;
+  width: 830px;
+  height: 93vh;
+  text-align: center;
+  background: #f0edea;
+  padding: 10px;
+  font-size: 15px;
+  -moz-border-radius-topmright: 50px 50px;
+  border-top-right-radius: 50px 50px;
+  -moz-border-radius-topleft: 50px 50px;
+  border-top-left-radius: 50px 50px;
+  -moz-border-radius-bottomright: 50px 50px;
+  border-bottom-right-radius: 50px 50px;
+  -moz-border-radius-bottomleft: 50px 50px;
+  border-bottom-left-radius: 50px 50px;
+}
+
+#mainjar {
+  position: absolute;
+  top: 93px;
+  left: 215px;
+  width: 400px;
+  height: 75vh;
+  background: #a5c4d4;
+  opacity: 0.5;
+  border: 5px solid #a2b9c4;
+  border-radius: 0 0 20px 20px;
+  border-top: none;
 }
