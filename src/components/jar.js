@@ -1,17 +1,15 @@
 const { Link } = require("react-router-dom");
 
-function Jar({ title }) {
+function Jar() {
   return (
-    <header>
-      <h1>{title}</h1>
-      <nav>
-        <Link to="/jar/magenta">#1 </Link> ||
-        <Link to="/jar/pink"> #2 </Link> ||
-        <Link to="/jar/red"> #3 </Link> ||
-        <Link to="/jar/orange"> #4 </Link> ||
-        <Link to="/jar/yellow"> #5 </Link>
-      </nav>
-    </header>
+    <div id="jar">
+      <h1>The Jar</h1>
+      <div id="notesinthejar">
+        <Link to="/magenta">Word of Wisdom </Link> ||
+        <Link to="/orange"> Happy Vibes </Link> ||
+        <Link to="/yellow"> Space-gazing </Link>
+      </div>
+    </div>
   );
 }
 

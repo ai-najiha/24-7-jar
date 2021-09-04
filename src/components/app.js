@@ -3,6 +3,9 @@ const Nav = require("./nav");
 const Jar = require("./jar");
 const HowToPlay = require("./howto");
 const Credit = require("./credit");
+const Magenta = require("./magenta");
+const Orange = require("./orange");
+const Yellow = require("./yellow");
 
 function App() {
   let pageTitle = "The 24/7 Jar";
@@ -13,6 +16,21 @@ function App() {
         <Switch>
           <Route exact={true} path="/">
             <Jar />
+          </Route>
+          <Route path="/magenta">
+            <Magenta />
+          </Route>
+          <Route path="/pink">
+            <Magenta />
+          </Route>
+          <Route path="/red">
+            <Magenta />
+          </Route>
+          <Route path="/orange">
+            <Orange />
+          </Route>
+          <Route path="/yellow">
+            <Yellow />
           </Route>
           <Route path="/howto">
             <HowToPlay />

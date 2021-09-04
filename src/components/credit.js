@@ -1,6 +1,6 @@
 function Credit() {
   return (
-    <div>
+    <div id="credit">
       <h2>Credit</h2>
     </div>
   );
