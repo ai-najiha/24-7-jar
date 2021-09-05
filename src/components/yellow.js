@@ -11,7 +11,8 @@ function Yellow() {
 
   function click(event) {
     event.preventDefault();
-    let endpoint = `https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&count=1`;
+    let NASA_KEY = process.env.REACT_APP_NASA_API;
+    let endpoint = `https://api.nasa.gov/planetary/apod?api_key=${NASA_KEY}&count=1`;
     fetch(endpoint, { method: "GET" })
       .then(function (res) {
         return res.json();

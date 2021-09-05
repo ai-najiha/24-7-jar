@@ -1,6 +1,7 @@
 #title {
   color: pink;
   text-align: center;
+  font-family: Lucida Handwriting;
 }
 
 nav {
@@ -12,6 +13,7 @@ nav {
   text-align: center;
   background: #f0edea;
   padding: 10px;
+  font-family: Lucida Handwriting;
   font-size: 15px;
   opacity: 0.5;
   -moz-border-radius-topright: 50px 50px;
@@ -25,15 +27,16 @@ nav {
 }
 
 #jar {
-  background-color: pink;
+  background-color: #f0edea;
   position: fixed;
   top: 170px;
+  font-family: Lucida Handwriting;
   text-align: center;
   padding: 10px;
 }
 
 #howto {
-  background-color: pink;
+  background-color: #f0edea;
   position: fixed;
   top: 170px;
   text-align: center;
@@ -41,7 +44,7 @@ nav {
 }
 
 #credit {
-  background-color: pink;
+  background-color: #f0edea;
   position: fixed;
   top: 170px;
   text-align: center;
@@ -56,6 +59,25 @@ nav {
   background-color: magenta;
   position: fixed;
   top: 200px;
+  font-family: Comic Sans MS;
+  text-align: center;
+  padding: 10px;
+}
+
+#pink {
+  background-color: pink;
+  position: fixed;
+  top: 200px;
+  font-family: Comic Sans MS;
+  text-align: center;
+  padding: 10px;
+}
+
+#red {
+  background-color: red;
+  position: fixed;
+  top: 200px;
+  font-family: Comic Sans MS;
   text-align: center;
   padding: 10px;
 }
@@ -64,6 +86,7 @@ nav {
   background-color: orange;
   position: fixed;
   top: 200px;
+  font-family: Comic Sans MS;
   text-align: center;
   padding: 10px;
 }
@@ -72,6 +95,7 @@ nav {
   background-color: yellow;
   position: fixed;
   top: 200px;
+  font-family: Comic Sans MS;
   text-align: center;
   padding: 10px;
 }

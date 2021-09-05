@@ -6,6 +6,8 @@ const Credit = require("./credit");
 const Magenta = require("./magenta");
 const Orange = require("./orange");
 const Yellow = require("./yellow");
+const Pink = require("./pink");
+const Red = require("./red");
 
 function App() {
   let pageTitle = "The 24/7 Jar";
@@ -21,10 +23,10 @@ function App() {
             <Magenta />
           </Route>
           <Route path="/pink">
-            <Magenta />
+            <Pink />
           </Route>
           <Route path="/red">
-            <Magenta />
+            <Red />
           </Route>
           <Route path="/orange">
             <Orange />
