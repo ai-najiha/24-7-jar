@@ -19,6 +19,7 @@ function Yellow() {
       })
       .then(function (data) {
         setPic(data[0].url);
+        console.log(data[0].url);
         setCopyright(data[0].copyright);
         setTitlePic(data[0].title);
         setDesc(data[0].explanation);
@@ -30,6 +31,12 @@ function Yellow() {
   return (
     <div id="yellow">
       <button onClick={click}>Click Here</button>
+      <br />
+      <br />
+      <img
+        src={`https://api.allorigins.win/raw?url=${pic}`}
+        crossOrigin="true"
+      />
       <h3>{titlePic}</h3>
       <p>{desc}</p>
       <h5>

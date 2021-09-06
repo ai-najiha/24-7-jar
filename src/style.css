@@ -5,7 +5,7 @@
 }
 
 nav {
-  position: fixed;
+  position: absolute;
   top: 70px;
   left: 0vw;
   width: 99vw;
@@ -26,9 +26,13 @@ nav {
   border-bottom-left-radius: 50px 50px;
 }
 
+img {
+  height: 50vh;
+}
+
 #jar {
   background-color: #f0edea;
-  position: fixed;
+  position: absolute;
   top: 170px;
   font-family: Lucida Handwriting;
   text-align: center;
@@ -37,7 +41,7 @@ nav {
 
 #howto {
   background-color: #f0edea;
-  position: fixed;
+  position: absolute;
   top: 170px;
   text-align: center;
   padding: 10px;
@@ -45,7 +49,7 @@ nav {
 
 #credit {
   background-color: #f0edea;
-  position: fixed;
+  position: absolute;
   top: 170px;
   text-align: center;
   padding: 10px;
@@ -57,7 +61,7 @@ nav {
 
 #magenta {
   background-color: magenta;
-  position: fixed;
+  position: absolute;
   top: 200px;
   font-family: Comic Sans MS;
   text-align: center;
@@ -66,7 +70,7 @@ nav {
 
 #pink {
   background-color: pink;
-  position: fixed;
+  position: absolute;
   top: 200px;
   font-family: Comic Sans MS;
   text-align: center;
@@ -75,7 +79,7 @@ nav {
 
 #red {
   background-color: red;
-  position: fixed;
+  position: absolute;
   top: 200px;
   font-family: Comic Sans MS;
   text-align: center;
@@ -84,7 +88,7 @@ nav {
 
 #orange {
   background-color: orange;
-  position: fixed;
+  position: absolute;
   top: 200px;
   font-family: Comic Sans MS;
   text-align: center;
@@ -93,7 +97,7 @@ nav {
 
 #yellow {
   background-color: yellow;
-  position: fixed;
+  position: absolute;
   top: 200px;
   font-family: Comic Sans MS;
   text-align: center;
