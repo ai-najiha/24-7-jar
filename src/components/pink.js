@@ -26,6 +26,7 @@ function Pink() {
         setDesc(data.results[randomArr].overview);
         setPosterUrl("https://www.themoviedb.org/t/p/w300_and_h450_bestv2");
         //setImg();
+        //setPosterUrl(<img src={`${poster}`} crossOrigin="true" />);
       });
   }
   return (
@@ -42,3 +43,4 @@ function Pink() {
 }
 
 module.exports = Pink;
+//

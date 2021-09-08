@@ -24,6 +24,7 @@ function Red() {
         setPoster(data.results[randomArr].poster_path);
         setDesc(data.results[randomArr].overview);
         setPosterUrl("https://www.themoviedb.org/t/p/w300_and_h450_bestv2");
+        //setPosterUrl(<img src={`${poster}`} crossOrigin="true" />);
       });
   }
   return (
