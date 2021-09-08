@@ -28,7 +28,8 @@ function Red() {
   }
   return (
     <div id="red">
-      <button onClick={click}>Click Here</button>
+      <h2>Movie</h2>
+      <button onClick={click}>Click to Open</button>
       <br />
       <br />
       <img src={`${posterUrl}${poster}`} crossOrigin="true" />

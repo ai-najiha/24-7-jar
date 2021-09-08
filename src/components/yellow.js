@@ -30,7 +30,8 @@ function Yellow() {
   }
   return (
     <div id="yellow">
-      <button onClick={click}>Click Here</button>
+      <h2>Space-gazing</h2>
+      <button onClick={click}>Click to Open</button>
       <br />
       <br />
       <img

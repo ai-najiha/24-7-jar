@@ -21,7 +21,8 @@ function Orange() {
   }
   return (
     <div id="orange">
-      <button onClick={click}>Click Here</button>
+      <h2>Happiness Vibes</h2>
+      <button onClick={click}>Click to Open</button>
       <p>{data}</p>
       <p>
         {dash} {author}

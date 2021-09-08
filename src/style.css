@@ -1,105 +1,184 @@
 #title {
-  color: pink;
+  color: black;
   text-align: center;
-  font-family: Lucida Handwriting;
+  font-family: Papyrus;
+  top: 5vh;
 }
 
 nav {
   position: absolute;
-  top: 70px;
-  left: 0vw;
-  width: 99vw;
+  top: 15vh;
+  left: 1.8vw;
+  width: 95vw;
   height: 5vh;
   text-align: center;
-  background: #f0edea;
   padding: 10px;
-  font-family: Lucida Handwriting;
-  font-size: 15px;
+  font-family: Papyrus;
+  font-size: 20px;
   opacity: 0.5;
-  -moz-border-radius-topright: 50px 50px;
-  border-top-right-radius: 50px 50px;
-  -moz-border-radius-topleft: 50px 50px;
-  border-top-left-radius: 50px 50px;
-  -moz-border-radius-bottomright: 50px 50px;
-  border-bottom-right-radius: 50px 50px;
-  -moz-border-radius-bottomleft: 50px 50px;
-  border-bottom-left-radius: 50px 50px;
 }
 
 img {
   height: 50vh;
 }
 
+#nav {
+  text-decoration: none;
+}
+
 #jar {
   background-color: #f0edea;
   position: absolute;
-  top: 170px;
-  font-family: Lucida Handwriting;
+  top: 30vh;
+  width: 50.5vw;
+  left: 24vw;
+  font-family: Papyrus;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
+  border-radius: 20px 20px 0 0;
+}
+
+#notesinthejar {
+  position: absolute;
+  top: 20vh;
+  width: 50vw;
+  height: 43vh;
+  bottom: 30vh;
+  font-size: 20px;
+  line-height: 45px;
+  background: #a5c4d4;
+  opacity: 0.5;
+  border: 5px solid #a2b9c4;
+  border-radius: 0 0 20px 20px;
+  border-top: none;
 }
 
 #howto {
   background-color: #f0edea;
   position: absolute;
-  top: 170px;
+  top: 30vh;
   text-align: center;
   padding: 10px;
+  width: 50vw;
+  left: 24vw;
+  font-family: Comic Sans MS;
+  font-size: 15px;
+  border-radius: 25px 25px 25px 25px;
 }
 
 #credit {
   background-color: #f0edea;
   position: absolute;
-  top: 170px;
+  top: 30vh;
   text-align: center;
   padding: 10px;
+  width: 50vw;
+  left: 24vw;
+  font-family: Comic Sans MS;
+  border-radius: 25px 25px 25px 25px;
 }
 
-#notesinthejar {
-  top: 300px;
+#linkmagenta {
+  background-color: magenta;
+  color: black;
+  padding: 5px;
+  border: 1px solid #a2b9c4;
+  border-radius: 25px 25px 25px 25px;
+  text-decoration: none;
+}
+
+#linkpink {
+  background-color: pink;
+  color: black;
+  padding: 5px;
+  border: 1px solid #a2b9c4;
+  border-radius: 25px 25px 25px 25px;
+  text-decoration: none;
+}
+
+#linkred {
+  background-color: red;
+  color: black;
+  padding: 5px;
+  border: 1px solid #a2b9c4;
+  border-radius: 25px 25px 25px 25px;
+  text-decoration: none;
+}
+
+#linkorange {
+  background-color: orange;
+  color: black;
+  padding: 5px;
+  border: 1px solid #a2b9c4;
+  border-radius: 25px 25px 25px 25px;
+  text-decoration: none;
+}
+
+#linkyellow {
+  background-color: yellow;
+  color: black;
+  padding: 5px;
+  border: 1px solid #a2b9c4;
+  border-radius: 25px 25px 25px 25px;
+  text-decoration: none;
 }
 
 #magenta {
   background-color: magenta;
   position: absolute;
-  top: 200px;
+  width: 50vw;
+  left: 24vw;
+  top: 40vh;
   font-family: Comic Sans MS;
   text-align: center;
   padding: 10px;
+  border-radius: 25px 25px 25px 25px;
 }
 
 #pink {
   background-color: pink;
   position: absolute;
-  top: 200px;
+  width: 50vw;
+  left: 24vw;
+  top: 30vh;
   font-family: Comic Sans MS;
   text-align: center;
   padding: 10px;
+  border-radius: 25px 25px 25px 25px;
 }
 
 #red {
   background-color: red;
   position: absolute;
-  top: 200px;
+  width: 50vw;
+  left: 24vw;
+  top: 30vh;
   font-family: Comic Sans MS;
   text-align: center;
   padding: 10px;
+  border-radius: 25px 25px 25px 25px;
 }
 
 #orange {
   background-color: orange;
   position: absolute;
-  top: 200px;
+  width: 50vw;
+  left: 24vw;
+  top: 40vh;
   font-family: Comic Sans MS;
   text-align: center;
   padding: 10px;
+  border-radius: 25px 25px 25px 25px;
 }
 
 #yellow {
   background-color: yellow;
   position: absolute;
-  top: 200px;
+  width: 50vw;
+  left: 24vw;
+  top: 30vh;
   font-family: Comic Sans MS;
   text-align: center;
   padding: 10px;
+  border-radius: 25px 25px 25px 25px;
 }

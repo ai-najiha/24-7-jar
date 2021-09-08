@@ -6,6 +6,7 @@ function Pink() {
   const [poster, setPoster] = useState(null);
   const [desc, setDesc] = useState(null);
   const [posterUrl, setPosterUrl] = useState(null);
+  //const [img, setImg] = useState(null);
 
   function click(event) {
     event.preventDefault();
@@ -24,11 +25,13 @@ function Pink() {
         setPoster(data.results[randomArr].poster_path);
         setDesc(data.results[randomArr].overview);
         setPosterUrl("https://www.themoviedb.org/t/p/w300_and_h450_bestv2");
+        //setImg();
       });
   }
   return (
     <div id="pink">
-      <button onClick={click}>Click Here</button>
+      <h2>TV Show</h2>
+      <button onClick={click}>Click to Open</button>
       <br />
       <br />
       <img src={`${posterUrl}${poster}`} crossOrigin="true" />
@@ -39,5 +42,3 @@ function Pink() {
 }
 
 module.exports = Pink;
-
-//<img src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2"{poster} /> is not working

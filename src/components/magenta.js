@@ -20,7 +20,8 @@ function Magenta() {
   }
   return (
     <div id="magenta">
-      <button onClick={click}>Click Here</button>
+      <h2>Words of Wisdom</h2>
+      <button onClick={click}>Click to Open</button>
       <p>{data}</p>
       <p>
         {dash} {author}
