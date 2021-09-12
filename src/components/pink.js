@@ -2,11 +2,9 @@ const { useState } = require("react");
 
 function Pink() {
   let randomArr = Math.floor(Math.random() * 19);
-  const [data, setData] = useState(null);
+  const [title, setTitle] = useState(null);
   const [poster, setPoster] = useState(null);
-  const [desc, setDesc] = useState(null);
-  const [posterUrl, setPosterUrl] = useState(null);
-  //const [img, setImg] = useState(null);
+  //const [desc, setDesc] = useState(null);
 
   function click(event) {
     event.preventDefault();
@@ -21,26 +19,25 @@ function Pink() {
         return res.json();
       })
       .then(function (data) {
-        setData(data.results[randomArr].name);
-        setPoster(data.results[randomArr].poster_path);
-        setDesc(data.results[randomArr].overview);
-        setPosterUrl("https://www.themoviedb.org/t/p/w300_and_h450_bestv2");
-        //setImg();
-        //setPosterUrl(<img src={`${poster}`} crossOrigin="true" />);
+        setTitle(data.results[randomArr].name);
+        setPoster(
+          <img
+            src={`https://www.themoviedb.org/t/p/w300_and_h450_bestv2${data.results[randomArr].poster_path}`}
+            crossOrigin="true"
+          />
+        );
+        //setDesc(data.results[randomArr].overview);
       });
   }
+
   return (
     <div id="pink">
       <h2>TV Show</h2>
       <button onClick={click}>Click to Open</button>
-      <br />
-      <br />
-      <img src={`${posterUrl}${poster}`} crossOrigin="true" />
-      <h3>{data}</h3>
-      <p>{desc}</p>
+      <h3>{title}</h3>
+      {poster}
     </div>
   );
 }
 
 module.exports = Pink;
-//

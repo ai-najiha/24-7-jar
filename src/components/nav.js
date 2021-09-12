@@ -7,8 +7,9 @@ function Nav({ title }) {
 
       <nav>
         {" "}
-        <hr />
+        <hr />{" "}
         <Link id="nav" to="/">
+          {" "}
           Jar{" "}
         </Link>{" "}
         ||

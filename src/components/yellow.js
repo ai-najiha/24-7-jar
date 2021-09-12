@@ -4,7 +4,7 @@ function Yellow() {
   const [pic, setPic] = useState(null);
   const [copyright, setCopyright] = useState(null);
   const [titlePic, setTitlePic] = useState(null);
-  const [desc, setDesc] = useState(null);
+  //const [desc, setDesc] = useState(null);
   const [date, setDate] = useState(null);
   const [nasa, setNasa] = useState(null);
   const [mark, setMark] = useState(null);
@@ -18,11 +18,15 @@ function Yellow() {
         return res.json();
       })
       .then(function (data) {
-        setPic(data[0].url);
-        console.log(data[0].url);
+        setPic(
+          <img
+            src={`https://api.allorigins.win/raw?url=${data[0].url}`}
+            crossOrigin="true"
+          />
+        );
         setCopyright(data[0].copyright);
         setTitlePic(data[0].title);
-        setDesc(data[0].explanation);
+        //setDesc(data[0].explanation);
         setDate(data[0].date);
         setNasa("NASA");
         setMark("|");
@@ -32,21 +36,12 @@ function Yellow() {
     <div id="yellow">
       <h2>Space-gazing</h2>
       <button onClick={click}>Click to Open</button>
-      <br />
-      <br />
-      <img
-        src={`https://api.allorigins.win/raw?url=${pic}`}
-        crossOrigin="true"
-      />
-      <h3>{titlePic}</h3>
-      <p>{desc}</p>
       <h5>
-        {date} {mark} {copyright} {mark} {nasa}
+        {titlePic} {mark} {date} {mark} {copyright} {mark} {nasa}
       </h5>
+      {pic}
     </div>
   );
 }
 
 module.exports = Yellow;
-
-//<img src="{pic}"> is not working

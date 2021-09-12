@@ -4,8 +4,7 @@ function Red() {
   let randomArr = Math.floor(Math.random() * 19);
   const [data, setData] = useState(null);
   const [poster, setPoster] = useState(null);
-  const [desc, setDesc] = useState(null);
-  const [posterUrl, setPosterUrl] = useState(null);
+  //const [desc, setDesc] = useState(null);
 
   function click(event) {
     event.preventDefault();
@@ -21,25 +20,23 @@ function Red() {
       })
       .then(function (data) {
         setData(data.results[randomArr].title);
-        setPoster(data.results[randomArr].poster_path);
-        setDesc(data.results[randomArr].overview);
-        setPosterUrl("https://www.themoviedb.org/t/p/w300_and_h450_bestv2");
-        //setPosterUrl(<img src={`${poster}`} crossOrigin="true" />);
+        setPoster(
+          <img
+            src={`https://www.themoviedb.org/t/p/w300_and_h450_bestv2${data.results[randomArr].poster_path}`}
+            crossOrigin="true"
+          />
+        );
+        //setDesc(data.results[randomArr].overview);
       });
   }
   return (
     <div id="red">
       <h2>Movie</h2>
       <button onClick={click}>Click to Open</button>
-      <br />
-      <br />
-      <img src={`${posterUrl}${poster}`} crossOrigin="true" />
       <h3>{data}</h3>
-      <p>{desc}</p>
+      {poster}
     </div>
   );
 }
 
 module.exports = Red;
-
-// is not working
